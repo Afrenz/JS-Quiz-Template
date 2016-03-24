@@ -2,19 +2,18 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"><![endif]-->
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="JS interview questions" content="">
+        <title>Quiz Your JS Skills</title>
+        <meta name="JS questions" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" type="text/css" href="styles.css">
-
-       <script src="/scripts.js"></script>
 
     </head>
     <body>
@@ -29,9 +28,10 @@
             <p><strong>Test your skills</strong> on the basics</p>
           </header>
 
+        <!-- Forms content here-->
           <section>
             <div id="results"></div>
-            <form name="InterviewQuestions" onsubmit="return submitAnswer()">
+            <form name="quizForm" onsubmit="return submitAnswer()">
                 <h3> What HTML element do we put in JS code?</h3>
                   <input type="radio" name="question1" value="a" id="question1a">a. &lt;js&gt;<br>
                   <input type="radio" name="question1" value="b" id="question1b">b. &lt;script&gt;<br>
@@ -41,14 +41,14 @@
                 <h3> What is the difference between undefined and not defined in JS?</h3>
                   <input type="radio" name="question2" value="a" id="question2a">a. undefined is a variable with no set value and not defined is the same thing<br>
                   <input type="radio" name="question2" value="b" id="question2b">b. Undefined is a variable not assigned a<br>
-                  <input type="radio" name="question2" value="c" id="question2c">c. body tag<br>
-                  <input type="radio" name="question2" value="d" id="question2d">d. meta tag<br>
+                  <input type="radio" name="question2" value="c" id="question2c">c. There is no difference<br>
+                  <input type="radio" name="question2" value="d" id="question2d">d. Undefined has a meta tag included for SEO<br>
 
                 <h3> How would you write "hello" in an alert box?</h3>
                   <input type="radio" name="question3" value="a" id="question3a">a. console.log("hello");<br>
                   <input type="radio" name="question3" value="b" id="question3b">b. alert("hello");<br>
                   <input type="radio" name="question3" value="c" id="question3c">c. alert.log('hello');<br>
-                  <input type="radio" name="question3" value="d" id="question3d">d. console.alert.hello<br>
+                  <input type="radio" name="question3" value="d" id="question3d">d. console.alert["hello"]<br>
 
                 <h3> JavaScript is a compiler language?</h3>
                   <input type="radio" name="question4" value="a" id="question4a">a. True<br>
@@ -66,9 +66,9 @@
 
                 <h3> What is the difference between undefined and not defined in JS?</h3>
                   <input type="radio" name="question7" value="a" id="question7a">a. undefined is a variable with no set value and not defined is the same thing<br>
-                  <input type="radio" name="question7" value="b" id="question7b">b. Undefined is a variable without var to declare it, not defined is a var declared variable without a value assigned to it<br>
-                  <input type="radio" name="question7" value="c" id="question7c">c. body tag<br>
-                  <input type="radio" name="question7" value="d" id="question7d">d. meta tag<br>
+                  <input type="radio" name="question7" value="b" id="question7b">b. Undefined is a variable without var to declare itd to it<br>
+                  <input type="radio" name="question7" value="c" id="question7c">c. not defined is a var declared variable without a value assigne<br>
+                  <input type="radio" name="question7" value="d" id="question7d">d. both b and c<br>
 
                 <h3> Objects are a collection of values with properties?</h3>
                   <input type="radio" name="question8" value="a" id="question8a">a. True<br>
@@ -80,6 +80,9 @@
                   <input type="radio" name="question9" value="c" id="question9c">c. method.<br>
                   <input type="radio" name="question9" value="d" id="question9d">d. a and c<br>
 
+                <h3> Immutable in JS means can't be changed</h3>
+                  <input type="radio" name="question10" value="a" id="question8a">a. True<br>
+                  <input type="radio" name="question10" value="b" id="question8b">b. False<br>
 
 
                 <br><br>
@@ -89,22 +92,24 @@
 
 
           <footer>
-
-           <p>crayon and pixels  Copyrite©2016</p>
+            <p>Crayon and Pixels  Copyrite©2016</p>
           </footer>
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+         <script type ="text/javascript" src="script.js"></script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+     <!--    <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        </script> -->
     </body>
 </html>

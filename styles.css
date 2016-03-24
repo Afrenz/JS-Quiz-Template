@@ -41,3 +41,22 @@ section{
 footer{
   text-align: center;
 }
+
+input[type='submit']{
+  background-color: #21409A;
+  border:0;
+  color:#fff;
+  padding: 10px 15px;
+  cursor:pointer;
+}
+
+#results h3{
+  background:#F15A29;
+  padding:10px;
+  margin:10px 0px;
+}
+
+#results span{
+  color:#000;
+  font-weight: bold;
+}
