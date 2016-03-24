@@ -1,0 +1,43 @@
+body {
+
+    background: fo6226;
+    font-family: open sans;
+    font-size: 14px;
+    font-style: bold;
+}
+
+#container {
+    width:60%;
+    background: #F15A29;
+    margin:20px auto;
+    overflow: auto;
+    padding: 25px;
+
+}
+
+header {
+    text-align: center;
+    border-bottom: #fff dashed 2px;
+}
+
+header h1 {
+  margin:0;
+  padding:0;
+  color: #FFF;
+
+}
+
+header p{
+    margin-top:5px;
+    padding:0;
+    color:#FFF;
+
+}
+
+section{
+    min-height:700px;
+}
+
+footer{
+  text-align: center;
+}

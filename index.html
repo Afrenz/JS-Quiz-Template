@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="JS interview questions" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+       <script src="/scripts.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="container">
+          <header>
+            <h1>Simple JavaScript Interview Questions</h1>
+            <p><strong>Test your skills</strong> on the basics</p>
+          </header>
+
+          <section>
+            <div id="results"></div>
+            <form name="InterviewQuestions" onsubmit="return submitAnswer()">
+                <h3> What HTML element do we put in JS code?</h3>
+                  <input type="radio" name="question1" value="a" id="question1a">a. &lt;js&gt;<br>
+                  <input type="radio" name="question1" value="b" id="question1b">b. &lt;script&gt;<br>
+                  <input type="radio" name="question1" value="c" id="question1c">c. &lt;body&gt;<br>
+                  <input type="radio" name="question1" value="d" id="question1d">d. &lt;meta&gt;<br>
+
+                <h3> What is the difference between undefined and not defined in JS?</h3>
+                  <input type="radio" name="question2" value="a" id="question2a">a. undefined is a variable with no set value and not defined is the same thing<br>
+                  <input type="radio" name="question2" value="b" id="question2b">b. Undefined is a variable not assigned a<br>
+                  <input type="radio" name="question2" value="c" id="question2c">c. body tag<br>
+                  <input type="radio" name="question2" value="d" id="question2d">d. meta tag<br>
+
+                <h3> How would you write "hello" in an alert box?</h3>
+                  <input type="radio" name="question3" value="a" id="question3a">a. console.log("hello");<br>
+                  <input type="radio" name="question3" value="b" id="question3b">b. alert("hello");<br>
+                  <input type="radio" name="question3" value="c" id="question3c">c. alert.log('hello');<br>
+                  <input type="radio" name="question3" value="d" id="question3d">d. console.alert.hello<br>
+
+                <h3> JavaScript is a compiler language?</h3>
+                  <input type="radio" name="question4" value="a" id="question4a">a. True<br>
+                  <input type="radio" name="question4" value="b" id="question4b">b. False<br>
+
+                <h3> JS Object Literals and JSON are the same thing?</h3>
+                  <input type="radio" name="question5" value="a" id="question5a">a. True<br>
+                  <input type="radio" name="question5" value="b" id="question5b">b. False<br>
+
+                <h3> What is the defining difference between JSON and JS Object Literal?</h3>
+                  <input type="radio" name="question6" value="a" id="question6a">a. Json is an agnositc data-interchange format and "stringNotation" are required for all keys in key value pairs. While in JS Object Literal keys are without<br>
+                  <input type="radio" name="question6" value="b" id="question6b">b. Data types in JSON are restricted to string, number, object, array A literal(as true false or null)<br>
+                  <input type="radio" name="question6" value="c" id="question6c">c. JS Object Literal and JSON are the same, there is nothing different<br>
+                  <input type="radio" name="question6" value="d" id="question6d">d. Both A and B<br>
+
+                <h3> What is the difference between undefined and not defined in JS?</h3>
+                  <input type="radio" name="question7" value="a" id="question7a">a. undefined is a variable with no set value and not defined is the same thing<br>
+                  <input type="radio" name="question7" value="b" id="question7b">b. Undefined is a variable without var to declare it, not defined is a var declared variable without a value assigned to it<br>
+                  <input type="radio" name="question7" value="c" id="question7c">c. body tag<br>
+                  <input type="radio" name="question7" value="d" id="question7d">d. meta tag<br>
+
+                <h3> Objects are a collection of values with properties?</h3>
+                  <input type="radio" name="question8" value="a" id="question8a">a. True<br>
+                  <input type="radio" name="question8" value="b" id="question8b">b. False<br>
+
+                <h3> A function attached to an object is</h3>
+                  <input type="radio" name="question9" value="a" id="question9a">a. object<br>
+                  <input type="radio" name="question9" value="b" id="question9b">b. variable<br>
+                  <input type="radio" name="question9" value="c" id="question9c">c. method.<br>
+                  <input type="radio" name="question9" value="d" id="question9d">d. a and c<br>
+
+
+
+                <br><br>
+                <input type="submit" value="Submit Answers">
+            </form>
+          </section>
+
+
+          <footer>
+
+           <p>crayon and pixels  Copyrite©2016</p>
+          </footer>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
